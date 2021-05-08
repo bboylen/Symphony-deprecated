@@ -1,6 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 
+import ApolloClient, { gql } from 'apollo-boost';
+import { ApolloProvider, useQuery } from '@apollo/react-hooks';
+import config from './aws-exports';
+
+const query = gql`{hello}`;
+
+const client = new ApolloClient({
+  uri: config.aws_appsync_graphqlEndpoint
+});
+
 function App() {
   return (
     <div className="App">
