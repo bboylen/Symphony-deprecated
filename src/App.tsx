@@ -4,16 +4,21 @@ import "./App.css";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import { ApolloProvider, useQuery } from "@apollo/react-hooks";
 import config from "./aws-exports";
-
+console.log(config);
 const query = gql`
   {
-    hello
+    listBlogs {
+    nextToken
+  }
   }
 `;
 
 const client = new ApolloClient({
   uri: config.aws_appsync_graphqlEndpoint,
   cache: new InMemoryCache(),
+  headers: {
+    'x-api-key': config.aws_appsync_apiKey
+  },
 });
 
 function App() {
