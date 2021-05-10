@@ -17,6 +17,7 @@
     "antd": "^4.15.4",
     "apollo-boost": "^0.4.9",
     "apollo-client": "^2.6.10",
+    "aws-amplify": "^3.4.0",
     "craco-less": "^1.17.1",
     "cross-env": "^7.0.3",
     "customize-cra": "^1.0.0",
