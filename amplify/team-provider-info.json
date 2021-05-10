@@ -10,6 +10,11 @@
       "StackName": "amplify-symphony-dev-104350",
       "StackId": "arn:aws:cloudformation:us-east-1:606621205831:stack/amplify-symphony-dev-104350/30ffd840-b014-11eb-ab96-0e9c0517557f",
       "AmplifyAppId": "d2s8wltu4dpwgz"
+    },
+    "categories": {
+      "auth": {
+        "symphonyece02fe2": {}
+      }
     }
   }
 }
