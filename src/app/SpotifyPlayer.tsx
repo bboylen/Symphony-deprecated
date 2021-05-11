@@ -6,7 +6,7 @@ import { Button } from 'antd';
 export const SpotifyPlayer = () => {
   return (
     <div className="Spotify-Player">
-      <Button type="primary">Button</Button>
+      <Button type="primary">Click Button</Button>
     </div>
   );
 };
