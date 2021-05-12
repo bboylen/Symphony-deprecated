@@ -23,9 +23,7 @@ const client = new ApolloClient({
 function App() {
   return (
     <div className="App">
-      <button onClick={() => Auth.federatedSignIn()}>
-        Sign in With my cum
-      </button>
+      <button onClick={() => Auth.federatedSignIn()}>Sign in</button>
       <SpotifyPlayer></SpotifyPlayer>
     </div>
   );
